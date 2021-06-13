@@ -1,0 +1,37 @@
+C:\Users\PREDATOR\source\repos\WinFormsAppPaint\bin\Debug\net5.0-windows\WinFormsAppPaint.exe
+C:\Users\PREDATOR\source\repos\WinFormsAppPaint\bin\Debug\net5.0-windows\WinFormsAppPaint.deps.json
+C:\Users\PREDATOR\source\repos\WinFormsAppPaint\bin\Debug\net5.0-windows\WinFormsAppPaint.runtimeconfig.json
+C:\Users\PREDATOR\source\repos\WinFormsAppPaint\bin\Debug\net5.0-windows\WinFormsAppPaint.runtimeconfig.dev.json
+C:\Users\PREDATOR\source\repos\WinFormsAppPaint\bin\Debug\net5.0-windows\WinFormsAppPaint.dll
+C:\Users\PREDATOR\source\repos\WinFormsAppPaint\bin\Debug\net5.0-windows\ref\WinFormsAppPaint.dll
+C:\Users\PREDATOR\source\repos\WinFormsAppPaint\bin\Debug\net5.0-windows\WinFormsAppPaint.pdb
+C:\Users\PREDATOR\source\repos\WinFormsAppPaint\obj\Debug\net5.0-windows\WinFormsAppPaint.csprojAssemblyReference.cache
+C:\Users\PREDATOR\source\repos\WinFormsAppPaint\obj\Debug\net5.0-windows\WinFormsAppPaint.Form1.resources
+C:\Users\PREDATOR\source\repos\WinFormsAppPaint\obj\Debug\net5.0-windows\WinFormsAppPaint.csproj.GenerateResource.cache
+C:\Users\PREDATOR\source\repos\WinFormsAppPaint\obj\Debug\net5.0-windows\WinFormsAppPaint.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PREDATOR\source\repos\WinFormsAppPaint\obj\Debug\net5.0-windows\WinFormsAppPaint.AssemblyInfoInputs.cache
+C:\Users\PREDATOR\source\repos\WinFormsAppPaint\obj\Debug\net5.0-windows\WinFormsAppPaint.AssemblyInfo.cs
+C:\Users\PREDATOR\source\repos\WinFormsAppPaint\obj\Debug\net5.0-windows\WinFormsAppPaint.csproj.CoreCompileInputs.cache
+C:\Users\PREDATOR\source\repos\WinFormsAppPaint\obj\Debug\net5.0-windows\WinFormsAppPaint.dll
+C:\Users\PREDATOR\source\repos\WinFormsAppPaint\obj\Debug\net5.0-windows\ref\WinFormsAppPaint.dll
+C:\Users\PREDATOR\source\repos\WinFormsAppPaint\obj\Debug\net5.0-windows\WinFormsAppPaint.pdb
+C:\Users\PREDATOR\source\repos\WinFormsAppPaint\obj\Debug\net5.0-windows\WinFormsAppPaint.genruntimeconfig.cache
+D:\c#\Новая папка (2)\WinFormsAppPaint\bin\Debug\net5.0-windows\WinFormsAppPaint.exe
+D:\c#\Новая папка (2)\WinFormsAppPaint\bin\Debug\net5.0-windows\WinFormsAppPaint.deps.json
+D:\c#\Новая папка (2)\WinFormsAppPaint\bin\Debug\net5.0-windows\WinFormsAppPaint.runtimeconfig.json
+D:\c#\Новая папка (2)\WinFormsAppPaint\bin\Debug\net5.0-windows\WinFormsAppPaint.runtimeconfig.dev.json
+D:\c#\Новая папка (2)\WinFormsAppPaint\bin\Debug\net5.0-windows\WinFormsAppPaint.dll
+D:\c#\Новая папка (2)\WinFormsAppPaint\bin\Debug\net5.0-windows\ref\WinFormsAppPaint.dll
+D:\c#\Новая папка (2)\WinFormsAppPaint\bin\Debug\net5.0-windows\WinFormsAppPaint.pdb
+D:\c#\Новая папка (2)\WinFormsAppPaint\obj\Debug\net5.0-windows\WinFormsAppPaint.csprojAssemblyReference.cache
+D:\c#\Новая папка (2)\WinFormsAppPaint\obj\Debug\net5.0-windows\WinFormsAppPaint.Form1.resources
+D:\c#\Новая папка (2)\WinFormsAppPaint\obj\Debug\net5.0-windows\WinFormsAppPaint.csproj.GenerateResource.cache
+D:\c#\Новая папка (2)\WinFormsAppPaint\obj\Debug\net5.0-windows\WinFormsAppPaint.GeneratedMSBuildEditorConfig.editorconfig
+D:\c#\Новая папка (2)\WinFormsAppPaint\obj\Debug\net5.0-windows\WinFormsAppPaint.AssemblyInfoInputs.cache
+D:\c#\Новая папка (2)\WinFormsAppPaint\obj\Debug\net5.0-windows\WinFormsAppPaint.AssemblyInfo.cs
+D:\c#\Новая папка (2)\WinFormsAppPaint\obj\Debug\net5.0-windows\WinFormsAppPaint.csproj.CoreCompileInputs.cache
+D:\c#\Новая папка (2)\WinFormsAppPaint\obj\Debug\net5.0-windows\WinFormsAppPaint.dll
+D:\c#\Новая папка (2)\WinFormsAppPaint\obj\Debug\net5.0-windows\ref\WinFormsAppPaint.dll
+D:\c#\Новая папка (2)\WinFormsAppPaint\obj\Debug\net5.0-windows\WinFormsAppPaint.pdb
+D:\c#\Новая папка (2)\WinFormsAppPaint\obj\Debug\net5.0-windows\WinFormsAppPaint.genruntimeconfig.cache
+D:\c#\Новая папка (2)\WinFormsAppPaint\obj\Debug\net5.0-windows\WinFormsAppPaint.Form2.resources
