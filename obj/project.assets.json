@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\c#\\Новая папка (2)\\WinFormsAppPaint\\WinFormsAppPaint.csproj",
+      "projectUniqueName": "D:\\c#\\lesson64\\WinFormsAppPaint\\WinFormsAppPaint.csproj",
       "projectName": "WinFormsAppPaint",
-      "projectPath": "D:\\c#\\Новая папка (2)\\WinFormsAppPaint\\WinFormsAppPaint.csproj",
+      "projectPath": "D:\\c#\\lesson64\\WinFormsAppPaint\\WinFormsAppPaint.csproj",
       "packagesPath": "C:\\Users\\PREDATOR\\.nuget\\packages\\",
-      "outputPath": "D:\\c#\\Новая папка (2)\\WinFormsAppPaint\\obj\\",
+      "outputPath": "D:\\c#\\lesson64\\WinFormsAppPaint\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

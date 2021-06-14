@@ -35,3 +35,22 @@ D:\c#\Новая папка (2)\WinFormsAppPaint\obj\Debug\net5.0-windows\ref\Wi
 D:\c#\Новая папка (2)\WinFormsAppPaint\obj\Debug\net5.0-windows\WinFormsAppPaint.pdb
 D:\c#\Новая папка (2)\WinFormsAppPaint\obj\Debug\net5.0-windows\WinFormsAppPaint.genruntimeconfig.cache
 D:\c#\Новая папка (2)\WinFormsAppPaint\obj\Debug\net5.0-windows\WinFormsAppPaint.Form2.resources
+D:\c#\lesson64\WinFormsAppPaint\bin\Debug\net5.0-windows\WinFormsAppPaint.exe
+D:\c#\lesson64\WinFormsAppPaint\bin\Debug\net5.0-windows\WinFormsAppPaint.deps.json
+D:\c#\lesson64\WinFormsAppPaint\bin\Debug\net5.0-windows\WinFormsAppPaint.runtimeconfig.json
+D:\c#\lesson64\WinFormsAppPaint\bin\Debug\net5.0-windows\WinFormsAppPaint.runtimeconfig.dev.json
+D:\c#\lesson64\WinFormsAppPaint\bin\Debug\net5.0-windows\WinFormsAppPaint.dll
+D:\c#\lesson64\WinFormsAppPaint\bin\Debug\net5.0-windows\ref\WinFormsAppPaint.dll
+D:\c#\lesson64\WinFormsAppPaint\bin\Debug\net5.0-windows\WinFormsAppPaint.pdb
+D:\c#\lesson64\WinFormsAppPaint\obj\Debug\net5.0-windows\WinFormsAppPaint.csprojAssemblyReference.cache
+D:\c#\lesson64\WinFormsAppPaint\obj\Debug\net5.0-windows\WinFormsAppPaint.Form1.resources
+D:\c#\lesson64\WinFormsAppPaint\obj\Debug\net5.0-windows\WinFormsAppPaint.Form2.resources
+D:\c#\lesson64\WinFormsAppPaint\obj\Debug\net5.0-windows\WinFormsAppPaint.csproj.GenerateResource.cache
+D:\c#\lesson64\WinFormsAppPaint\obj\Debug\net5.0-windows\WinFormsAppPaint.GeneratedMSBuildEditorConfig.editorconfig
+D:\c#\lesson64\WinFormsAppPaint\obj\Debug\net5.0-windows\WinFormsAppPaint.AssemblyInfoInputs.cache
+D:\c#\lesson64\WinFormsAppPaint\obj\Debug\net5.0-windows\WinFormsAppPaint.AssemblyInfo.cs
+D:\c#\lesson64\WinFormsAppPaint\obj\Debug\net5.0-windows\WinFormsAppPaint.csproj.CoreCompileInputs.cache
+D:\c#\lesson64\WinFormsAppPaint\obj\Debug\net5.0-windows\WinFormsAppPaint.dll
+D:\c#\lesson64\WinFormsAppPaint\obj\Debug\net5.0-windows\ref\WinFormsAppPaint.dll
+D:\c#\lesson64\WinFormsAppPaint\obj\Debug\net5.0-windows\WinFormsAppPaint.pdb
+D:\c#\lesson64\WinFormsAppPaint\obj\Debug\net5.0-windows\WinFormsAppPaint.genruntimeconfig.cache

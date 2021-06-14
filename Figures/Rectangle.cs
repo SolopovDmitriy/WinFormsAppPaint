@@ -9,8 +9,8 @@ namespace WinFormsAppPaint.Figures
 {
     class Rectangle : IFigure // прямоугольник, доделать (отрицательная ширина или высота - ошибка)
     {
-        public Point topLeftPoint { get; set; }
-        public Point bottomRightPoint { get; set; }
+        public Point StartPoint { get; set; }
+        public Point EndPoint { get; set; }
 
         public void draw(Graphics g)
         {
@@ -19,8 +19,8 @@ namespace WinFormsAppPaint.Figures
             //g.DrawRectangle(pen1, topLeftPoint.X, topLeftPoint.Y,
             //    bottomRightPoint.X, bottomRightPoint.Y);
            
-            g.DrawRectangle(pen1, topLeftPoint.X, topLeftPoint.Y,
-                bottomRightPoint.X - topLeftPoint.X, bottomRightPoint.Y - topLeftPoint.Y);
+            g.DrawRectangle(pen1, StartPoint.X, StartPoint.Y,
+                EndPoint.X - StartPoint.X, EndPoint.Y - StartPoint.Y);
         }
     }
 }

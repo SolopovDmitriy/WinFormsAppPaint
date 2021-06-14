@@ -9,8 +9,8 @@ namespace WinFormsAppPaint.Figures
 {
     class Circle : IFigure // окружность
     {
-        public Point topLeftPoint { get; set; }
-        public Point bottomRightPoint { get; set; }
+        public Point StartPoint { get; set; }
+        public Point EndPoint { get; set; }
         
         public void draw(Graphics g)
         {

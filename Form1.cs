@@ -23,12 +23,12 @@ namespace WinFormsAppPaint
         {
             InitializeComponent();
             figures = new List<IFigure>();
-            Figures.Line line1 = new Figures.Line
+            Figures.Rectangle rectangle = new Figures.Rectangle
             {
-                bottomRightPoint = new Point(10, 50),
-                topLeftPoint = new Point(100, 200)
+                EndPoint = new Point(10, 50),
+                StartPoint = new Point(100, 200)
             };
-            figures.Add(line1);
+            figures.Add(rectangle);
         }
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
@@ -54,10 +54,10 @@ namespace WinFormsAppPaint
         {
             if (e.Button.Equals(MouseButtons.Left))
             {
-                currentFigure = new Figures.Line
+                currentFigure = new Figures.Rectangle
                 {
-                    topLeftPoint = e.Location,
-                    bottomRightPoint = e.Location
+                    StartPoint = e.Location,
+                    EndPoint = e.Location
                 };
                 figures.Add(currentFigure);
             }
@@ -69,7 +69,7 @@ namespace WinFormsAppPaint
         {
             if(currentFigure != null)
             {
-                currentFigure.bottomRightPoint = e.Location;
+                currentFigure.EndPoint = e.Location;
             }
             pictureBox1.Invalidate();
         }
@@ -83,7 +83,7 @@ namespace WinFormsAppPaint
         private void pictureBox1_paint(object sender, PaintEventArgs e)
         {
             Graphics g = e.Graphics;
-            foreach (IFigure figure  in figures)
+            foreach (IFigure figure in figures)
             {
                 figure.draw(g);
             }
