@@ -16,11 +16,44 @@ namespace WinFormsAppPaint.Figures
         {
             Pen pen1 = new Pen(Color.Green);
             pen1.Width = 5;
-            //g.DrawRectangle(pen1, topLeftPoint.X, topLeftPoint.Y,
-            //    bottomRightPoint.X, bottomRightPoint.Y);
-           
-            g.DrawRectangle(pen1, StartPoint.X, StartPoint.Y,
+
+            if (StartPoint.X <= EndPoint.X && StartPoint.Y <= EndPoint.Y)
+            {
+                g.DrawRectangle(pen1, StartPoint.X, StartPoint.Y,
                 EndPoint.X - StartPoint.X, EndPoint.Y - StartPoint.Y);
+            }
+            else if (StartPoint.X > EndPoint.X && StartPoint.Y <= EndPoint.Y)
+            {
+                g.DrawRectangle(pen1, EndPoint.X, StartPoint.Y,
+                StartPoint.X - EndPoint.X, EndPoint.Y - StartPoint.Y);
+            }
+            else if (StartPoint.X <= EndPoint.X && StartPoint.Y > EndPoint.Y)
+            {
+                g.DrawRectangle(pen1, StartPoint.X, EndPoint.Y,
+                EndPoint.X - StartPoint.X, StartPoint.Y - EndPoint.Y);
+            }
+            else if (StartPoint.X > EndPoint.X && StartPoint.Y > EndPoint.Y)
+            {
+                g.DrawRectangle(pen1, EndPoint.X, EndPoint.Y,
+                StartPoint.X - EndPoint.X, StartPoint.Y - EndPoint.Y);
+            }
+
         }
+
+
+        //public void draw(Graphics g)
+        //{
+        //    Pen pen1 = new Pen(Color.Green);
+        //    pen1.Width = 5;
+        //    //g.DrawRectangle(pen1, topLeftPoint.X, topLeftPoint.Y,
+        //    //    bottomRightPoint.X, bottomRightPoint.Y);
+
+        //    g.DrawRectangle(pen1, StartPoint.X, StartPoint.Y,
+        //        EndPoint.X - StartPoint.X, EndPoint.Y - StartPoint.Y);
+        //}
     }
 }
+
+
+
+
