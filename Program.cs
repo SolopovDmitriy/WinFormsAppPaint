@@ -18,6 +18,7 @@ namespace WinFormsAppPaint
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
+            //комментарий, чтобы внести какие-то изменения в репозиторий
         }
     }
 }
