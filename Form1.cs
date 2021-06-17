@@ -23,12 +23,12 @@ namespace WinFormsAppPaint
         {
             InitializeComponent();
             figures = new List<IFigure>();
-            Figures.Rectangle rectangle = new Figures.Rectangle
+            Figures.Circle circle = new Figures.Circle
             {
                 EndPoint = new Point(10, 50),
                 StartPoint = new Point(100, 200)
             };
-            figures.Add(rectangle);
+            figures.Add(circle);
         }
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
@@ -54,7 +54,7 @@ namespace WinFormsAppPaint
         {
             if (e.Button.Equals(MouseButtons.Left))
             {
-                currentFigure = new Figures.Rectangle
+                currentFigure = new Figures.Circle
                 {
                     StartPoint = e.Location,
                     EndPoint = e.Location

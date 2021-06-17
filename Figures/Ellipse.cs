@@ -11,10 +11,12 @@ namespace WinFormsAppPaint.Figures
     {
         public Point StartPoint { get; set; }
         public Point EndPoint { get; set; }
-        
+
         public void draw(Graphics g)
         {
-            throw new NotImplementedException();
+            Pen pen1 = new Pen(Color.Green);
+            pen1.Width = 5;
+            g.DrawEllipse(pen1, StartPoint.X, StartPoint.Y, EndPoint.X - StartPoint.X, EndPoint.Y);
         }
     }
 }

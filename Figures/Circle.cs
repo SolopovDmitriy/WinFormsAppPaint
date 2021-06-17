@@ -14,7 +14,10 @@ namespace WinFormsAppPaint.Figures
         
         public void draw(Graphics g)
         {
-            throw new NotImplementedException();
+            Pen pen1 = new Pen(Color.Green);
+            pen1.Width = 5;
+            g.DrawEllipse(pen1, StartPoint.X, StartPoint.Y, EndPoint.X- StartPoint.X, EndPoint.X - StartPoint.X);
+            
         }
     }
 }
