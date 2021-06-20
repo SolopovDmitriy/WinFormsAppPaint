@@ -9,13 +9,15 @@ namespace WinFormsAppPaint.Figures
 {
     class Rectangle : IFigure // прямоугольник, доделать (отрицательная ширина или высота - ошибка)
     {
+        public Color Color { get; set; }
         public Point StartPoint { get; set; }
         public Point EndPoint { get; set; }
+        public int Thickness { get; set; }
 
-        public void draw(Graphics g)
+        public void Draw(Graphics g)
         {
-            Pen pen1 = new Pen(Color.Green);
-            pen1.Width = 5;
+            Pen pen1 = new Pen(Color);
+            pen1.Width = Thickness;
 
             if (StartPoint.X <= EndPoint.X && StartPoint.Y <= EndPoint.Y)
             {

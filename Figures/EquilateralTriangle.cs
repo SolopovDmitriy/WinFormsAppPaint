@@ -7,16 +7,17 @@ using System.Threading.Tasks;
 
 namespace WinFormsAppPaint.Figures
 {
-    class RightTriangle : IFigure // прямоугольный треугольник
+    class EquilateralTriangle : IFigure // равнобедренный треугольник
     {
+
         public Color Color { get; set; }
         public Point StartPoint { get; set; }
         public Point EndPoint { get; set; }
-        public Point st { get; set; }
         public int Thickness { get; set; }
 
         public void Draw(Graphics g)
         {
+
             Pen pen1 = new Pen(Color);
             pen1.Width = Thickness;
 
@@ -38,26 +39,18 @@ namespace WinFormsAppPaint.Figures
                 topY = StartPoint.Y;
             }
 
-            // прямоугольный треугольник 2-я точка
-            Point st = new Point(leftX, bottomY);
-            Point topLeft = new Point(leftX, topY);
-            Point bottomRight = new Point(rightX, bottomY);
-        
+
+            // равносторонний треугольник 2-я точка
+            int halfSide = (int)((bottomY - topY) / Math.Sqrt(3));
+
+            Point topMiddle = new Point(leftX, topY);
+            Point bottomRight = new Point(leftX + halfSide, bottomY);
+            Point bottomLeft = new Point(leftX - halfSide, bottomY);
+
             // сама прорисовка
-            g.DrawLine(pen1, topLeft, st);
-            g.DrawLine(pen1, st, bottomRight);
-            g.DrawLine(pen1, topLeft, bottomRight);
-
-
+            g.DrawLine(pen1, topMiddle, bottomLeft);
+            g.DrawLine(pen1, topMiddle, bottomRight);
+            g.DrawLine(pen1, bottomLeft, bottomRight);
         }
-
-
-
-
-
-
-
-
     }
 }
-

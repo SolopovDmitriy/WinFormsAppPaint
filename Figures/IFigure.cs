@@ -9,12 +9,15 @@ namespace WinFormsAppPaint.Figures
 {
     public interface IFigure
     {
-        Point StartPoint
-        {
-            get;
-            set;
-        } //имя свойства пишется с большой буквы
+        public Color Color { get; set; }
+
+        Point StartPoint { get; set; } //имя свойства пишется с большой буквы
+
         Point EndPoint { get; set; }//имя свойства пишется с большой буквы
-        void draw(Graphics g); // имя метода пишется с большой буквы
+
+        public int Thickness { get; set; }
+
+        void Draw(Graphics g); // имя метода пишется с большой буквы
+
     }
 }// провести упорядочивание кода!!!

@@ -64,7 +64,10 @@ namespace WinFormsAppPaint
             this.searchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItemColorDialog = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripComboBoxThickness = new System.Windows.Forms.ToolStripComboBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -79,7 +82,9 @@ namespace WinFormsAppPaint
             this.fileToolStripMenuItem,
             this.editToolStripMenuItem,
             this.toolsToolStripMenuItem,
-            this.helpToolStripMenuItem});
+            this.helpToolStripMenuItem,
+            this.toolStripMenuItemColorDialog,
+            this.toolStripComboBoxThickness});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(992, 32);
@@ -104,10 +109,6 @@ namespace WinFormsAppPaint
             // toolStripComboBoxFigures
             // 
             this.toolStripComboBoxFigures.AutoCompleteCustomSource.AddRange(new string[] {
-            "Circle",
-            "Rectangle",
-            "Line"});
-            this.toolStripComboBoxFigures.Items.AddRange(new object[] {
             "Circle",
             "Rectangle",
             "Line"});
@@ -344,6 +345,19 @@ namespace WinFormsAppPaint
             this.aboutToolStripMenuItem.Size = new System.Drawing.Size(150, 26);
             this.aboutToolStripMenuItem.Text = "&About...";
             // 
+            // toolStripMenuItemColorDialog
+            // 
+            this.toolStripMenuItemColorDialog.Name = "toolStripMenuItemColorDialog";
+            this.toolStripMenuItemColorDialog.Size = new System.Drawing.Size(59, 28);
+            this.toolStripMenuItemColorDialog.Text = "Color";
+            this.toolStripMenuItemColorDialog.Click += new System.EventHandler(this.toolStripMenuItemColorDialog_Click);
+            // 
+            // toolStripComboBoxThickness
+            // 
+            this.toolStripComboBoxThickness.Name = "toolStripComboBoxThickness";
+            this.toolStripComboBoxThickness.Size = new System.Drawing.Size(121, 28);
+            this.toolStripComboBoxThickness.TextChanged += new System.EventHandler(this.toolStripComboBoxThickness_TextChanged);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -412,6 +426,9 @@ namespace WinFormsAppPaint
         private System.Windows.Forms.ToolStripMenuItem searchToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemColorDialog;
+        private System.Windows.Forms.ColorDialog colorDialog1;
+        private System.Windows.Forms.ToolStripComboBox toolStripComboBoxThickness;
     }
 }
 

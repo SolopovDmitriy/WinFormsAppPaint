@@ -6,4 +6,8 @@
     <UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Figures\EquilateralTriangle.cs~RF23cc1e96.TMP" />
+  </ItemGroup>
+
 </Project>
