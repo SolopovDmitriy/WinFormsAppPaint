@@ -15,9 +15,16 @@ namespace WinFormsAppPaint.Figures
 
         Point EndPoint { get; set; }//имя свойства пишется с большой буквы
 
+        Point TopLeft { get; set; } //имя свойства пишется с большой буквы
+
+        Point BottomRight { get; set; }//имя свойства пишется с большой буквы
+
         public int Thickness { get; set; }
 
         void Draw(Graphics g); // имя метода пишется с большой буквы
+
+        bool Hittest(Point point);
+
 
     }
 }// провести упорядочивание кода!!!

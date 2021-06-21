@@ -12,14 +12,25 @@ namespace WinFormsAppPaint.Figures
         public Color Color { get; set; }
         public Point StartPoint { get; set; }
         public Point EndPoint { get; set; }
-        public int   Thickness { get; set; }
+        public Point TopLeft { get; set; } 
+        public Point BottomRight { get; set; }
+        public int Thickness { get; set; }
+        public int Radius { get; set; }
+        public Point Center { get; set; }
 
         public void Draw(Graphics g)
         {
             Pen pen1 = new Pen(Color);
             pen1.Width = Thickness;
-            g.DrawEllipse(pen1, StartPoint.X, StartPoint.Y, EndPoint.X - StartPoint.X, EndPoint.X - StartPoint.X);
+            Center = new Point((StartPoint.X + EndPoint.X) / 2, (StartPoint.Y + EndPoint.Y) / 2);
+            Radius = (EndPoint.X - StartPoint.X)/2;
+            g.DrawEllipse(pen1, StartPoint.X, StartPoint.Y, 2*Radius, 2*Radius);
+        }
 
+        public bool Hittest(Point point)
+        {
+            double distanceFromCenterToPoint = Math.Sqrt(Math.Pow(Center.X - point.X, 2) + Math.Pow(Center.Y - point.Y, 2));
+            return distanceFromCenterToPoint < Radius;
         }
     }
 }

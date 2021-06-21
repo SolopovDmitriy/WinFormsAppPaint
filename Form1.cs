@@ -25,15 +25,20 @@ namespace WinFormsAppPaint
             figureColor = Color.Black;
             figureThickness = 5;
 
-            string[] names = {nameof(EquilateralTriangle), "Circle", nameof(Figures.Rectangle), nameof(Ellipse), nameof(RightTriangle), nameof(IsoscelesTriangle), nameof(Line)};
-            toolStripComboBoxFigures.Items.AddRange(names);
+            string[] names = {
+                nameof(EquilateralTriangle), 
+                nameof(Circle), 
+                nameof(Figures.Rectangle), 
+                nameof(Ellipse), 
+                nameof(RightTriangle), 
+                nameof(IsoscelesTriangle), 
+                nameof(Line)};
 
+            toolStripComboBoxListFigures.Items.AddRange(names);  
             string[] thicknessNames = { "1", "3", "5" };
-            toolStripComboBoxThickness.Items.AddRange(thicknessNames);
-
-            toolStripComboBoxThickness.SelectedIndex = 2;
-            toolStripComboBoxFigures.SelectedIndex = 0;
-
+            toolStripComboBoxListThickness.Items.AddRange(thicknessNames);            
+            toolStripComboBoxListThickness.SelectedIndex = 2;
+            toolStripComboBoxListFigures.SelectedIndex = 0;
             figures = new List<IFigure>();
             //Figures.RightTriangle rightTriangle = new Figures.RightTriangle
             //{
@@ -53,45 +58,61 @@ namespace WinFormsAppPaint
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void toolStripMenuItemDelete_Click(object sender, EventArgs e)
         {
-            Form2 f = new Form2();
-            f.Show();
+            
         }
 
         private void pictureBox1_MouseDown(object sender, MouseEventArgs e)
         {
-            if (e.Button.Equals(MouseButtons.Left))
+            if (toolStripButtonDelete.Checked) 
             {
-                if(toolStripComboBoxFigures.Text == "IsoscelesTriangle")
+                IFigure figureToDelete = null;
+                foreach (IFigure figure in figures)
+                {
+                    if (figure.Hittest(e.Location)) // e.Location -- point of mouse click
+                    {
+                        figureToDelete = figure;
+                        break;
+                    }
+                }
+                if(figureToDelete != null)
+                {
+                    figures.Remove(figureToDelete);
+                }              
+            }
+
+            else if (e.Button.Equals(MouseButtons.Left))
+            {  
+                if (toolStripComboBoxListFigures.Text == "IsoscelesTriangle")
                 {
                     currentFigure = new Figures.IsoscelesTriangle();
                 }
-                if (toolStripComboBoxFigures.Text == "Rectangle")
+                if (toolStripComboBoxListFigures.Text == "Rectangle")
                 {
                     currentFigure = new Figures.Rectangle();
                 }
-                if (toolStripComboBoxFigures.Text == "Line")
+                if (toolStripComboBoxListFigures.Text == "Line")
                 {
                     currentFigure = new Figures.Line();
                 }
-                if (toolStripComboBoxFigures.Text == "Ellipse")
+                if (toolStripComboBoxListFigures.Text == "Ellipse")
                 {
                     currentFigure = new Figures.Ellipse();
                 }
-                if (toolStripComboBoxFigures.Text == "Circle")
+                if (toolStripComboBoxListFigures.Text == "Circle")
                 {
                     currentFigure = new Figures.Circle();
                 }
-                if (toolStripComboBoxFigures.Text == nameof(RightTriangle))
+                if (toolStripComboBoxListFigures.Text == nameof(RightTriangle))
                 {
                     currentFigure = new Figures.RightTriangle();
                 }
 
-                if (toolStripComboBoxFigures.Text == nameof(EquilateralTriangle))
+                if (toolStripComboBoxListFigures.Text == nameof(EquilateralTriangle))
                 {
                     currentFigure = new Figures.EquilateralTriangle();
                 }
@@ -134,7 +155,12 @@ namespace WinFormsAppPaint
         {           
         }
 
-        private void toolStripMenuItemColorDialog_Click(object sender, EventArgs e)
+        private void toolStripButtonDelete_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripButtonColor_Click(object sender, EventArgs e)
         {
             if (colorDialog1.ShowDialog() == DialogResult.OK)
             {
@@ -142,9 +168,9 @@ namespace WinFormsAppPaint
             }
         }
 
-        private void toolStripComboBoxThickness_TextChanged(object sender, EventArgs e)
+        private void toolStripComboBoxListThickness_TextChanged(object sender, EventArgs e)
         {
-            Int32.TryParse(toolStripComboBoxThickness.Text, out figureThickness);
+            Int32.TryParse(toolStripComboBoxListThickness.Text, out figureThickness);
         }
     }
 }
