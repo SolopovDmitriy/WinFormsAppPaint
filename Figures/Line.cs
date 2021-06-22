@@ -25,7 +25,7 @@ namespace WinFormsAppPaint.Figures
 
         public bool Hittest(Point point)
         {
-            return false; // TODO
+            return StartPoint.X <= point.X && StartPoint.Y <= point.Y && EndPoint.X >= point.X && EndPoint.Y >= point.Y;   
         }
     }
 }
